@@ -15,3 +15,7 @@ INSERT INTO `kobex`.`users` (`persons_id`, `code`, `email`, `password`, `token`,
 
 
 INSERT INTO `kobex`.`users_plans` (`users_id`, `plans_id`, `active`, `created_at`) VALUES ('1', '2', 'yes', '2019-01-18 06:44:25');
+
+
+INSERT INTO `kobex`.`leaders_users` (`leader_id`, `user_id`, `created_at`) VALUES ('1', '1', '2019-05-25 06:45:25');
+
