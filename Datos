@@ -1,0 +1,17 @@
+INSERT INTO `kobex`.`roles` (`id`, `name`, `description`, `created_at`) VALUES ('1', 'Administrador', 'Control total de la cuenta', '2019-01-18 06:06:25');
+INSERT INTO `kobex`.`roles` (`id`, `name`, `description`, `created_at`) VALUES ('2', 'Colaborador', 'Acceso Total', '2019-01-18 06:06:25');
+INSERT INTO `kobex`.`roles` (`id`, `name`, `description`, `created_at`) VALUES ('3', 'Ayudante', 'Ver y descargar documentos', '2019-01-18 06:06:25');
+INSERT INTO `kobex`.`roles` (`id`, `name`, `description`, `created_at`) VALUES ('4', 'Participante', 'Solo ver documentos', '2019-01-18 06:06:25');
+
+
+INSERT INTO `repo`.`persons` (`name`, `lastname`, `address`, `phone1`, `phone2`, `more`, `created_at`) VALUES ('John', 'Doe', 'Test Address 1', '55555555', '55555555', '', '2019-01-18 06:43:25');
+
+
+INSERT INTO `kobex`.`plans` (`name`, `description`, `price`, `duration`, `created_at`) VALUES ('Basic', 'Permitido conectar con un usuario mas.', '0', '0', '2019-01-18 06:44:25');
+INSERT INTO `kobex`.`plans` (`id`, `name`, `description`, `price`, `duration`, `created_at`) VALUES ('2', 'Premium', 'Permitido conectar con cualquier cantidad de usuarios.', '0', '0', '2019-01-18 06:44:25');
+
+
+INSERT INTO `kobex`.`users` (`persons_id`, `code`, `email`, `password`, `token`, `roles_id`, `created_at`) VALUES ('1', '0001', 'johndoe@email.com', '12345', 'tokenJohnDoe', '1', '2019-01-18 06:45:25');
+
+
+INSERT INTO `kobex`.`users_plans` (`users_id`, `plans_id`, `active`, `created_at`) VALUES ('1', '2', 'yes', '2019-01-18 06:44:25');
